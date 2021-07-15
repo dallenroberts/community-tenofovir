@@ -1,0 +1,6 @@
+reporter_plugins/
+Static/
+Templates/
+/*.json
+*.xls*
+*._*
