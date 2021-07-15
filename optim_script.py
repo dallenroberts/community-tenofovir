@@ -47,12 +47,13 @@ CALIBRATION_SCENARIO = 'Baseline'
 # commonly modified calibration variables
 BASE_POPULATION_SCALE_FACTOR = 0.005  # For quick test simulations, this is set to a very low value
 N_ITERATIONS = 2
-N_SAMPLES_PER_ITERATION = 20  # the number of distinct parameter sets to run per iteration
-N_REPLICATES = 3  # replicates > 1 helps OptimTool to be more stable at the cost of more simulations. 3 is recommended.
+N_SAMPLES_PER_ITERATION = 2  # the number of distinct parameter sets to run per iteration
+N_REPLICATES = 1  # replicates > 1 helps OptimTool to be more stable at the cost of more simulations. 3 is recommended.
 TEST_N = 1  # TEST_N is macro variable used to create directory name
 
 # The excel file with parameter, analyzer, and reference data to parse
-ingest_xlsm_filename = os.path.join('Data', 'calibration_ingest_form-demo.xlsm')
+# ingest_xlsm_filename = os.path.join('Data', 'calibration_ingest_form_western_Kenya.xlsm')
+ingest_xlsm_filename = 'calibration_ingest_form_western_Kenya.xlsm'
 
 # params is a dict, site_info is a dict, reference is a PopulationObs object, analyzers is a list of dictionaries of
 # analyzer arguments

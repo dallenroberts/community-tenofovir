@@ -1,6 +1,10 @@
 reporter_plugins/
-Static/
-Templates/
 /*.json
 *.xls*
 *._*
+*.DS_Store
+/Static
+/Templates
+*_cache
+__pycache__/
+*.log
