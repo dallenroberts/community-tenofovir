@@ -1,10 +1,27 @@
-reporter_plugins/
+
+## COMPS logs and output
 /*.json
-*.xls*
 *._*
 *.DS_Store
-/Static
-/Templates
 *_cache
 __pycache__/
 *.log
+*.stackdump
+
+## Custom reporter plug-ins
+reporter_plugins/
+
+## Run scenarios output
+scenarios/
+output/
+
+## Calibration 
+!calibration/
+
+calibration/*
+!calibration/simtools.ini
+!calibration/ingest_forms/
+!calibration/parameter_sets/
+
+## Command line examples for future reference
+command_line_examples.txt
