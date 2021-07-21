@@ -53,7 +53,10 @@ TEST_N = 1  # TEST_N is macro variable used to create directory name
 
 # The excel file with parameter, analyzer, and reference data to parse
 # ingest_xlsm_filename = os.path.join('calibration', 'ingest_forms', 'calibration_ingest_form_western_Kenya.xlsm')
-ingest_xlsm_filename = os.path.join('ingest_forms', 'calibration_ingest_form_western_Kenya.xlsm')
+# ingest_xlsm_filename = os.path.join('ingest_forms', 'calibration_ingest_form_western_Kenya.xlsm')
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+ingest_xlsm_filename = os.path.join(dir_path, 'calibration', 'ingest_forms', 'calibration_ingest_form_western_Kenya.xlsm')
 
 # params is a dict, site_info is a dict, reference is a PopulationObs object, analyzers is a list of dictionaries of
 # analyzer arguments
@@ -90,8 +93,6 @@ static_params = {'Base_Population_Scale_Factor': BASE_POPULATION_SCALE_FACTOR}
 # later on with run_scenarios.py and wish to use multiple templates sets (one per scenario) instead of the csv
 # table style of scenario generation.
 scenario_template_sets = {}
-
-dir_path = os.path.dirname(os.path.realpath(__file__))
 
 template_files_dir = os.path.join(dir_path, 'InputFiles', 'Templates')
 static_files_dir = os.path.join(dir_path, 'InputFiles', 'Static')
