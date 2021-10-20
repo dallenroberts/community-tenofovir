@@ -12,6 +12,19 @@
             "NodeID": 1,
             "NodeName": "Homa_Bay",
             "IndividualProperties": [
+              {
+               "COMMENT": "Use the KnownPositive to abort the use of PrEP",
+               "Initial_Distribution": [
+                  1,
+                  0
+               ],
+               "Property": "HIVStatus",
+               "Transitions": [],
+               "Values": [
+                  "Unknown",
+                  "KnownPositive"
+               ]
+              },
                 {
                     "Property": "Accessibility",
                     "Values": [ "Yes", "No" ],
@@ -54,6 +67,19 @@
             "NodeID": 2,
             "IndividualProperties": [
                 {
+                 "COMMENT": "Use the KnownPositive to abort the use of PrEP",
+                 "Initial_Distribution": [
+                    1,
+                    0
+                 ],
+                 "Property": "HIVStatus",
+                 "Transitions": [],
+                 "Values": [
+                    "Unknown",
+                    "KnownPositive"
+                 ]
+                },
+                {
                     "Property": "Accessibility",
                     "Values": [ "Yes", "No" ],
                     "Initial_Distribution": [ 1, 0 ],
@@ -94,6 +120,19 @@
             "NodeName": "Kisumu",
             "NodeID": 3,
             "IndividualProperties": [
+                {
+                 "COMMENT": "Use the KnownPositive to abort the use of PrEP",
+                 "Initial_Distribution": [
+                    1,
+                    0
+                 ],
+                 "Property": "HIVStatus",
+                 "Transitions": [],
+                 "Values": [
+                    "Unknown",
+                    "KnownPositive"
+                 ]
+                },
                 {
                     "Property": "Accessibility",
                     "Values": [ "Yes", "No" ],
@@ -136,6 +175,19 @@
             "NodeID": 4,
             "IndividualProperties": [
                 {
+                 "COMMENT": "Use the KnownPositive to abort the use of PrEP",
+                 "Initial_Distribution": [
+                    1,
+                    0
+                 ],
+                 "Property": "HIVStatus",
+                 "Transitions": [],
+                 "Values": [
+                    "Unknown",
+                    "KnownPositive"
+                 ]
+                },
+                {
                     "Property": "Accessibility",
                     "Values": [ "Yes", "No" ],
                     "Initial_Distribution": [ 1, 0 ],
@@ -177,6 +229,19 @@
             "NodeID": 5,
             "IndividualProperties": [
                 {
+                 "COMMENT": "Use the KnownPositive to abort the use of PrEP",
+                 "Initial_Distribution": [
+                    1,
+                    0
+                 ],
+                 "Property": "HIVStatus",
+                 "Transitions": [],
+                 "Values": [
+                    "Unknown",
+                    "KnownPositive"
+                 ]
+                },
+                {
                     "Property": "Accessibility",
                     "Values": [ "Yes", "No" ],
                     "Initial_Distribution": [ 1, 0 ],
@@ -217,6 +282,19 @@
 			"NodeName": "Siaya",
             "NodeID": 6,
             "IndividualProperties": [
+                {
+                 "COMMENT": "Use the KnownPositive to abort the use of PrEP",
+                 "Initial_Distribution": [
+                    1,
+                    0
+                 ],
+                 "Property": "HIVStatus",
+                 "Transitions": [],
+                 "Values": [
+                    "Unknown",
+                    "KnownPositive"
+                 ]
+                },
                 {
                     "Property": "Accessibility",
                     "Values": [ "Yes", "No" ],

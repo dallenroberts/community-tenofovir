@@ -15,6 +15,9 @@ reporter_plugins/
 scenarios/
 output/
 
+## Old campaign files
+InputFiles/Templates/archive
+
 ## Calibration 
 !calibration/
 
@@ -22,6 +25,17 @@ calibration/*
 !calibration/simtools.ini
 !calibration/ingest_forms/
 !calibration/parameter_sets/
+calibration/data/
+
+calibration/parameter_sets/archive
 
 ## Command line examples for future reference
 command_line_examples.txt
+
+## R project files
+*.Rproj*
+.Rproj.user
+.Rhistory
+
+## Figures
+*.pdf

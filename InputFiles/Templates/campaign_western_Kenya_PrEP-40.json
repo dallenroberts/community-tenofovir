@@ -2,6 +2,93 @@
    "Campaign_Name": "Baseline campaign for western Kenya",
    "Use_Defaults": 1,
    "Events": [
+{
+            "Event_Coordinator_Config": {
+                "Intervention_Config": {
+                    "class": "ControlledVaccine",
+                    "Intervention_Name": "PrEP",
+                    "Disqualifying_Properties": [
+                        "HIVStatus:KnownPositive"
+                    ],
+                    "Vaccine_Type": "AcquisitionBlocking",
+                    "Vaccine_Take": 1,
+                    "Waning_Config": {
+                        "class": "WaningEffectMapLinear",
+                        "Initial_Effect": 0.9,
+                        "Durability_Map": {
+                        	"Times": [
+                        		0,
+                        		90
+                        	],
+                        	"Values": [
+                        		0.9,
+                        		0.9
+                        	]
+                        },
+                        "Expire_At_Durability_Map_End": 1
+                    },
+                    "Distributed_Event_Trigger": "PrEP_Received",
+                    "Expired_Event_Trigger": "PrEP_Expired",
+                    "Duration_To_Wait_Before_Revaccination": 0,
+                    "Cost_To_Consumer": 10
+                },
+                "Property_Restrictions_Within_Node": [
+                ],
+                "Target_Age_Max": 35,
+                "Target_Age_Min": 16,
+                "Target_Disease_State": "HIV_Negative",
+                "Target_Gender": "Female",
+                "Target_Demographic": "ExplicitAgeRangesAndGender",
+                "Time_Value_Map": {
+                    "COMMENT": "It does linear interpolation between years so you do this to get square waves",
+                    "Times": [
+                        2022,
+                        2032
+                    ],
+                    "Values": [
+                        0.4,
+                        0.4
+                    ]
+                },
+                "Update_Period": 30.4167,
+                "class": "ReferenceTrackingEventCoordinatorHIV"
+            },
+            "Event_Name": "PrEP - Put HIV Negative, Women 16-35 on PrEP",
+            "Nodeset_Config": {
+                "class": "NodeSetAll"
+            },
+            "Start_Year": 2022,
+            "class": "CampaignEventByYear"
+        },
+        {
+            "Event_Coordinator_Config": {
+                "Intervention_Config": {
+                    "Actual_IndividualIntervention_Config": {
+                        "class": "BroadcastEvent",
+                        "New_Property_Value": "HIVStatus:KnownPositive",
+                        "Broadcast_Event": "PrEP_Aborted"
+                    },
+                    "COMMENT": "Listen for all of the different positive events from HIVRapidHIVDiagnostic",
+                    "Trigger_Condition_List": [
+                        "HIV_Positive_at_ANC",
+                        "ARTStaging1"
+                    ],
+                    "Targeting_Config": {
+                        "class": "HasIntervention",
+                        "Is_Equal_To": 1,
+                        "Intervention_Name": "PrEP"
+                    },
+                    "class": "NodeLevelHealthTriggeredIV"
+                },
+                "class": "StandardInterventionDistributionEventCoordinator"
+            },
+            "Event_Name": "PrEP - Set HIVStatus due to positive diagnosis",
+            "Nodeset_Config": {
+                "class": "NodeSetAll"
+            },
+            "Start_Year": 2022,
+            "class": "CampaignEventByYear"
+        },    	   	
 	{
         "BEGIN": "COMMERCIAL SEX",
 		"Event_Name": "Will ever become female sex worker (FSW) in Homa Bay",
