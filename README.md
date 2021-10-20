@@ -30,11 +30,11 @@
 - **Calibration Analysis (Prevalence)**:
 	- **Config**: config.json
 	- **Campaign**: campaign_western_Kenya.json
-	- **Suite**: 4b354333-221c-ec11-a9ed-b88303911bc1
+	- **Suite**: c6538d62-011d-ec11-9ecd-9440c9bee941
 - **Calibration Analysis (Incidence)**:
 	- **Config**: config_incidence.json
 	- **Campaign**: campaign_western_Kenya.json
-	- **Suite**: 3f5a3be9-3e1c-ec11-a9ed-b88303911bc1
+	- **Suite**: 798429c0-031d-ec11-9ecd-9440c9bee941
 - **PrEP Sweep**:
 	- **Config**: config_PrEPsweep.json
 	- **Campaign**: campaign_western_Kenya.json, campaign_western_Kenya-PrEP-XX.json
